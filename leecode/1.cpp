@@ -1,3 +1,4 @@
+//<<<<<<< HEAD
 /*
 1. 两数之和
 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
@@ -49,6 +50,28 @@ public:
             }
         }
         return res;
+//=======
+class Solution {
+public:
+    void quickSort(vector<int>& nums,vector<int>& position,int start,int end){
+        int tag = nums.at(position.at(end));
+        int i = start;
+        int j = end-1;
+        {
+
+        }
+    }
+    vector<int> sort(vector<int>& nums,int target){
+        vectot<int> position;
+        for(int i =0;i<nums.size();i++){
+            position.push_back(i);
+        }
+        quickSort(nums,position,0,nums.size()-1);
+    }
+    
+    vector<int> twoSum(vector<int>& nums, int target) {
+        
+//>>>>>>> 2a0dd6385d34d63a3cb78789cfdbd64c196f76b2
     }
 };
 
