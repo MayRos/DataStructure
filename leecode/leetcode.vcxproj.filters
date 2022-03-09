@@ -37,6 +37,12 @@
     <Filter Include="源文件\501-600\591-600">
       <UniqueIdentifier>{302ad356-7e8f-4c07-b501-7b1b19a8510a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\1701-1800">
+      <UniqueIdentifier>{4085fa60-64e7-49cc-b9bc-c976e649a8ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\1701-1800\1711-1720">
+      <UniqueIdentifier>{ab0a900d-318d-4813-b69f-d71a0a7fbdf8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="leetcode.cpp">
@@ -56,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="594.cpp">
       <Filter>源文件\501-600\591-600</Filter>
+    </ClCompile>
+    <ClCompile Include="1716.cpp">
+      <Filter>源文件\1701-1800\1711-1720</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
