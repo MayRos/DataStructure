@@ -38,7 +38,8 @@
 using namespace std;
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    // ±©Á¦
+    vector<int> twoSum_bruce(vector<int>& nums, int target) {
         vector<int> res(2);
         for (int i = 0; i < nums.size() - 1; ++i) {
             for (int j = i + 1; j < nums.size(); j++) {
@@ -50,9 +51,7 @@ public:
             }
         }
         return res;
-//=======
-class Solution {
-public:
+    }
     void quickSort(vector<int>& nums,vector<int>& position,int start,int end){
         int tag = nums.at(position.at(end));
         int i = start;
@@ -71,7 +70,6 @@ public:
     
     vector<int> twoSum(vector<int>& nums, int target) {
         
-//>>>>>>> 2a0dd6385d34d63a3cb78789cfdbd64c196f76b2
     }
 };
 
