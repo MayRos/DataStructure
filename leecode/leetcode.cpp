@@ -94,5 +94,5 @@ int main() {
 		int i = 7828670;
 		Solution so;
 		vector<int> res = so.twoSum(nums,i);
-       std::cout<< res[0]<<res[1];
+       std::cout<< res[0]<<"    " << res[1];
     }

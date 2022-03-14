@@ -36,7 +36,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-/*class Solution {
+class Solution {
 public:
     // ±©Á¦
     vector<int> twoSum_bruce(vector<int>& nums, int target) {
@@ -52,27 +52,7 @@ public:
         }
         return res;
     }
-    void quickSort(vector<int>& nums,vector<int>& position,int start,int end){
-        int tag = nums.at(position.at(end));
-        int i = start;
-        int j = end-1;
-        {
 
-        }
-    }
-    vector<int> sort(vector<int>& nums,int target){
-        vectot<int> position;
-        for(int i =0;i<nums.size();i++){
-            position.push_back(i);
-        }
-        quickSort(nums,position,0,nums.size()-1);
-    }
-    
-    vector<int> twoSum(vector<int>& nums, int target) {
-        
-    }
-};
-*/
 class Solution {
 public:
     
@@ -109,6 +89,9 @@ public:
         }
         vector<int> res(2);
         quickSort(nums,index,0,nums.size()-1);
+        for (int i = 0; i < 50; i++) {
+            cout << nums[index[i]]<<endl;// = i;
+        }
         int left = 0;
         int right =nums.size()-1;
         while(nums[index[left]]+nums[index[right]]!= target &&left<right){
