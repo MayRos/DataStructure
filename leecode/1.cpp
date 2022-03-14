@@ -52,9 +52,6 @@ public:
         }
         return res;
     }
-
-class Solution {
-public:
     
     void quickSort(const vector<int>& nums , vector<int>& index,int start,int end){
         if(start >= end){
