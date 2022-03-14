@@ -2,9 +2,10 @@
 //
 #include <vector>
 #include <iostream>
+#include "1.cpp"
 using namespace std;
 
-    int findLHS(vector<int>& nums) {
+/*    int findLHS(vector<int>& nums) {
         int maxLength = 0;
         int thisLength = 0;
         int higher = 0;
@@ -45,8 +46,11 @@ using namespace std;
         }
         return maxLength;
     }
-
+*/
 int main() {
-        vector<int> nums = { -3, -1, -1, -1, -3, -2 };
-       cout<< findLHS(nums);
+        vector<int> nums = {0,3,4,0};
+		int i = 0;
+		Solution so;
+		vector<int> res = so.twoSum(nums,i);
+       cout<< res[0]<<res[1];
     }
