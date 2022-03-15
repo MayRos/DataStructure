@@ -59,35 +59,42 @@ public:
         }
         int base = nums.at(index.at(end));
         int left = start;
-        int right =end-1;
+        int right = end-1;
         while(left<right){
-            while(nums.at(index.at(left))<=base&&left<right){
+            while (nums.at(index.at(left)) <= base && left < right) {
                 left++;
             }
-            while(nums.at(index.at(right))>=base&&left<right){
+            while (nums.at(index.at(right)) >= base && left < right) {
                 right--;
             }
             int item = index.at(left);
-             index.at(left) =  index.at(right);
-             index.at(right) = item;
+            index.at(left) = index.at(right);
+            index.at(right) = item;
         }
         if(nums.at(index.at(right))>base){
             int item = index.at(end);
             index.at(end) =  index.at(right);
             index.at(right)= item;
+            quickSort(nums,index,start,left-1);
+            quickSort(nums,index,left+1,end);
         }
-        quickSort(nums,index,start,left);
-        quickSort(nums,index,left+2,end);
+        else {
+            quickSort(nums, index, start, left);
+        }
+        
     }
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> twoSum_sort(vector<int>& nums, int target) {
         vector<int> index(nums.size()) ;
         for(int i = 0; i<nums.size();i++){
             index[i] = i;
         }
         vector<int> res(2);
         quickSort(nums,index,0,nums.size()-1);
-        for (int i = 0; i < 50; i++) {
-            cout << nums[index[i]]<<endl;// = i;
+        for (int i = 0; i <  nums.size()-1; i++) {
+            if (nums[index[i]] > nums[index[i + 1]]) {
+                cout << index[i]<<"  " << nums[index[i]] << endl;// = i;
+            }
+            
         }
         int left = 0;
         int right =nums.size()-1;
