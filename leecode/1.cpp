@@ -35,6 +35,7 @@
 */
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 using namespace std;
 class Solution {
 public:
@@ -52,7 +53,7 @@ public:
         }
         return res;
     }
-    
+    // ≈≈–Ú∫Û œ‡º”
     void quickSort(const vector<int>& nums , vector<int>& index,int start,int end){
         if(start >= end){
             return;
@@ -109,5 +110,17 @@ public:
         res[0] = index[left];
         res[1] = index[right];
         return res;
+    }
+    // hash
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> hashT;
+        for (int i = 0; i < nums.size(); i++) {
+            auto j = hashT.find(target - nums[i]);
+            if (j != hashT.end()) {
+                return {j->second,i };
+            }
+            hashT[nums[i]] = i;
+        }
+        return {};
     }
 };
