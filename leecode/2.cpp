@@ -95,29 +95,29 @@ public:
         return head;
     }
 };
-int main() {
-    ListNode* head1 = new ListNode;
-    ListNode* head2 = new ListNode;
-    ListNode* l1 = head1;
-    ListNode* l2 = head2;
-    const vector<int> a = { 9,9,9,9,9,9,9};
-    const vector<int> b = { 9,9,9,9 };
-    for (int i = 0; i < a.size(); i++) {
-        l1->val = a[i];
-        ListNode *aa = new ListNode;
-        l1->next = aa;
-        l1 = l1->next;
-    }
-    for (int i = 0; i < b.size(); i++) {
-        l2->val = b[i];
-        ListNode* bb = new ListNode;
-        l2->next = bb;
-        l2 = l2->next;
-    }
-    ListNode* res = Solution().addTwoNumbers(head1, head2);
-    while (res != nullptr)
-    {
-        cout << res->val<<"  ";
-        res = res->next;
-    }
-}
+//int main() {
+//    ListNode* head1 = new ListNode;
+//    ListNode* head2 = new ListNode;
+//    ListNode* l1 = head1;
+//    ListNode* l2 = head2;
+//    const vector<int> a = { 9,9,9,9,9,9,9};
+//    const vector<int> b = { 9,9,9,9 };
+//    for (int i = 0; i < a.size(); i++) {
+//        l1->val = a[i];
+//        ListNode *aa = new ListNode;
+//        l1->next = aa;
+//        l1 = l1->next;
+//    }
+//    for (int i = 0; i < b.size(); i++) {
+//        l2->val = b[i];
+//        ListNode* bb = new ListNode;
+//        l2->next = bb;
+//        l2 = l2->next;
+//    }
+//    ListNode* res = Solution().addTwoNumbers(head1, head2);
+//    while (res != nullptr)
+//    {
+//        cout << res->val<<"  ";
+//        res = res->next;
+//    }
+//}
