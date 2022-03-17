@@ -4,50 +4,104 @@
 #include <unordered_map>
 #include <map>
 using namespace std;
-struct ListNode {
+struct MyListNode {
     string key;
     int val;
-    ListNode* next;
-    ListNode* last;
-    ListNode() : key(""),val(0), next(nullptr),last(nullptr) {}
-    /*ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode* next) : val(x), next(next) {}*/
+    MyListNode* next;
+    MyListNode* last;
+    MyListNode() : key(""),val(0), next(nullptr),last(nullptr) {}
 };
 class AllOne {
 public:
-    unordered_map<string,int> unorder_map;
-    map<int, vector<string>> order_map;
+    MyListNode* head = new MyListNode;
+    MyListNode* tail = new MyListNode;
+    MyListNode* ptr = head;
     AllOne() {
-        //cout << "init" << endl;
+        head->next = tail;
+        tail->last = head;
     }
 
     void inc(string key) {
-        if (unorder_map.find(key) != unorder_map.end()) {
-            int n = unorder_map[key];
-            unorder_map[key] = n + 1;
-            order_map[n].erase(order_map[n].)
+        find(key);
+        if ( ptr!= tail) {
+            ptr->val = ptr->val + 1;
+            while (ptr->next != tail && ptr->val > ptr->next->val )
+            {
+                MyListNode* pre = ptr->last;
+                MyListNode* next = ptr->next;
+                MyListNode* nextnext = next->next;
+                pre->next = next;
+                next->last = pre;
+                next->next = ptr;
+                ptr->last = next;
+                ptr->next = nextnext;
+                nextnext->last = ptr;
+            }
         }
         else {
-            unorder_map[key] = 1;
-            order_map[1].push_back(key);
+            MyListNode* thisPtr = new MyListNode;
+            thisPtr->key = key;
+            thisPtr->val = 1;
+            MyListNode* first = head->next;
+            head->next = thisPtr;
+            thisPtr->last = head;
+            thisPtr->next = first;
+            first->last = thisPtr;
         }
     }
 
     void dec(string key) {
-        unorder_map[key] = unorder_map[key] - 1;
-        if (unorder_map[key] == 0) {
-
+        find(key);
+        ptr->val = ptr->val - 1;
+        if (ptr->val == 0) {
+            MyListNode* pre = ptr->last;
+            MyListNode* next = ptr->next;
+            pre->next = next;
+            next->last = pre;
+        }
+        else if (ptr->last != head && ptr->val < ptr->last->val) {
+            MyListNode* pre = ptr->last;
+            MyListNode* prepre = pre->last;
+            MyListNode* next = ptr->next;
+            prepre->next = ptr;
+            ptr->last = prepre;
+            ptr->next = pre;
+            pre->last = ptr;
+            pre->next = next;
+            next->last = pre;
         }
     }
 
     string getMaxKey() {
-        cout << "getMAxKey" << endl;
-        return "max";
+        if (tail->last == head) {
+            return "";
+        }
+        else {
+            return tail->last->key;
+        }
     }
 
     string getMinKey() {
-        cout << "getMinKey" << endl;
-        return "min";
+        if (head->next == tail)
+        {
+            return "";
+        }
+        else {
+            return head->next->key;
+        }
+    }
+private:
+    void find(string key) {
+        ptr = head;
+        while (ptr != tail)
+        {
+            if (ptr->key == key) {
+                return;
+            }
+            else {
+                ptr = ptr->next;
+            }
+        }
     }
 };
 int main() {
