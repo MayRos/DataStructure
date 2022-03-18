@@ -6,23 +6,30 @@ class CQueue {
 public:
     stack<int>  a;
     stack<int>  b;
-    CQueue() {}
-
-    void appendTail(int value) {
+    CQueue() {
+        while (!a.empty())
+        {
+            a.pop();
+        }
         while (!b.empty())
         {
-            a.push(b.top());
             b.pop();
         }
+    }
+
+    void appendTail(int value) {
         a.push(value);
     }
 
     int deleteHead() {
-        while (!a.empty())
-        {
-            b.push(a.top());
-            a.pop();
+        if (b.empty()) {
+            while (!a.empty())
+            {
+                b.push(a.top());
+                a.pop();
+            }
         }
+
         if (b.empty()) {
             return -1;
         }
@@ -31,6 +38,7 @@ public:
         return i;
     }
 };
+
 int main() {
     vector<string> in1 = { "CQueue","deleteHead","appendTail","appendTail","deleteHead","deleteHead" };
     vector<int> in2 = { {} ,{},{5},{2},{},{} };
