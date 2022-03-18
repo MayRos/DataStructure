@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="源文件\1-100">
       <UniqueIdentifier>{2561dec9-758b-4dc2-a79a-c06c3cdf497d}</UniqueIdentifier>
     </Filter>
@@ -49,6 +45,16 @@
     <Filter Include="源文件\401-500\431-440">
       <UniqueIdentifier>{9a9bf82e-19fb-40f6-a46f-fcaf95a832eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\701-800">
+      <UniqueIdentifier>{dd391057-9de1-42a5-91b2-924b9320eea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\701-800\711-720">
+      <UniqueIdentifier>{374312b3-2a0d-44de-9b8e-68bb7848e901}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.cpp">
@@ -74,6 +80,9 @@
     </ClCompile>
     <ClCompile Include="432.cpp">
       <Filter>源文件\401-500\431-440</Filter>
+    </ClCompile>
+    <ClCompile Include="720.cpp">
+      <Filter>源文件\701-800\711-720</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -23,38 +23,38 @@ public:
     string getMinKey() {
     }
 private:
-    }
+    
 };
-int main() {
-    vector<string> fun = { "AllOne", "inc", "inc", "getMaxKey", "getMinKey", "inc", "getMaxKey", "getMinKey" };
-    vector<string> param = { {} ,{"hello"},{"hello"},{},{},{"leet"},{},{} };
-    AllOne* a = nullptr;
-    for (int i = 0; i < fun.size() && i < param.size(); i++) {
-        if (fun[i] == "AllOne")
-        {
-            a = new AllOne();
-            cout << "null  ";
-        }
-        else if (fun[i] == "inc")
-        {
-            a->inc(param[i]);
-            cout << "null  ";
-        }
-        else if (fun[i] == "dec")
-        {
-            a->dec(param[i]);
-            cout << "null  ";
-        }
-        else if (fun[i] == "getMaxKey")
-        {
-            cout<< a->getMaxKey()<<"  ";
-        }
-        else if (fun[i] == "getMinKey")
-        {
-            cout<< a->getMinKey()<<"  ";
-        }
-    }
-}
+//int main() {
+//    vector<string> fun = { "AllOne", "inc", "inc", "getMaxKey", "getMinKey", "inc", "getMaxKey", "getMinKey" };
+//    vector<string> param = { {} ,{"hello"},{"hello"},{},{},{"leet"},{},{} };
+//    AllOne* a = nullptr;
+//    for (int i = 0; i < fun.size() && i < param.size(); i++) {
+//        if (fun[i] == "AllOne")
+//        {
+//            a = new AllOne();
+//            cout << "null  ";
+//        }
+//        else if (fun[i] == "inc")
+//        {
+//            a->inc(param[i]);
+//            cout << "null  ";
+//        }
+//        else if (fun[i] == "dec")
+//        {
+//            a->dec(param[i]);
+//            cout << "null  ";
+//        }
+//        else if (fun[i] == "getMaxKey")
+//        {
+//            cout<< a->getMaxKey()<<"  ";
+//        }
+//        else if (fun[i] == "getMinKey")
+//        {
+//            cout<< a->getMinKey()<<"  ";
+//        }
+//    }
+//}
 /**
  * Your AllOne object will be instantiated and called as such:
  * AllOne* obj = new AllOne();
