@@ -90,5 +90,8 @@
     <ClCompile Include="offer09.cpp">
       <Filter>源文件\剑指offer</Filter>
     </ClCompile>
+    <ClCompile Include="LCP19.cpp">
+      <Filter>源文件\剑指offer</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
