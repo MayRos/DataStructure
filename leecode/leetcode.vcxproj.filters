@@ -9,89 +9,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="源文件\1-100">
-      <UniqueIdentifier>{2561dec9-758b-4dc2-a79a-c06c3cdf497d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\1-100\1-10">
-      <UniqueIdentifier>{73db6780-6f43-4d7c-90dc-e282ee4bddb8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\301-400">
-      <UniqueIdentifier>{a94054f3-57b8-4962-94e6-4127f63ece8d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\301-400\311-320">
-      <UniqueIdentifier>{efadf5f1-e755-4bbe-a883-ed26486b7112}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\301-400\391-400">
-      <UniqueIdentifier>{5ac68f21-c536-4f01-9027-df414bec1f1e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\501-600">
-      <UniqueIdentifier>{7831ebe0-4557-4b4f-b3f6-dea1ffbad9b2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\501-600\561-570">
-      <UniqueIdentifier>{4d89b1da-5d4e-4097-9e55-17c9f85d0acb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\501-600\591-600">
-      <UniqueIdentifier>{302ad356-7e8f-4c07-b501-7b1b19a8510a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\1701-1800">
-      <UniqueIdentifier>{4085fa60-64e7-49cc-b9bc-c976e649a8ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\1701-1800\1711-1720">
-      <UniqueIdentifier>{ab0a900d-318d-4813-b69f-d71a0a7fbdf8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\401-500">
-      <UniqueIdentifier>{17f8c8f9-3d64-48b8-b5d3-6323e52bab85}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\401-500\431-440">
-      <UniqueIdentifier>{9a9bf82e-19fb-40f6-a46f-fcaf95a832eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\701-800">
-      <UniqueIdentifier>{dd391057-9de1-42a5-91b2-924b9320eea9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\701-800\711-720">
-      <UniqueIdentifier>{374312b3-2a0d-44de-9b8e-68bb7848e901}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\剑指offer">
-      <UniqueIdentifier>{ac35e64c-0b8b-446c-9b50-8a2f44a0d6ef}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="1.cpp">
-      <Filter>源文件\1-100\1-10</Filter>
-    </ClCompile>
-    <ClCompile Include="319.cpp">
-      <Filter>源文件\301-400\311-320</Filter>
-    </ClCompile>
-    <ClCompile Include="391.cpp">
-      <Filter>源文件\301-400\391-400</Filter>
-    </ClCompile>
-    <ClCompile Include="563.cpp">
-      <Filter>源文件\501-600\561-570</Filter>
-    </ClCompile>
-    <ClCompile Include="594.cpp">
-      <Filter>源文件\501-600\591-600</Filter>
-    </ClCompile>
-    <ClCompile Include="1716.cpp">
-      <Filter>源文件\1701-1800\1711-1720</Filter>
-    </ClCompile>
-    <ClCompile Include="2.cpp">
-      <Filter>源文件\1-100\1-10</Filter>
-    </ClCompile>
-    <ClCompile Include="432.cpp">
-      <Filter>源文件\401-500\431-440</Filter>
-    </ClCompile>
-    <ClCompile Include="720.cpp">
-      <Filter>源文件\701-800\711-720</Filter>
-    </ClCompile>
-    <ClCompile Include="offer09.cpp">
-      <Filter>源文件\剑指offer</Filter>
-    </ClCompile>
-    <ClCompile Include="LCP19.cpp">
-      <Filter>源文件\剑指offer</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
