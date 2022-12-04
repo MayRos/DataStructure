@@ -23,6 +23,8 @@ s1 和 s2  只包含集合 {'a', 'b', 'c', 'd', 'e', 'f'} 中的小写字�
 s2 是 s1 的一个字母异位词
 */
 #include <string>
+#include <iostream>
+#include <stack>
 using namespace std;
 class Solution {
 public:
@@ -32,12 +34,29 @@ public:
 
 		int first = -1;
 		int second = -1;
+		stack<int> diff;
 		for (int i = 0; i < s1.length(); i++)
 		{
-			if (s1[i] == s2[i])
+			if (s1[i] != s2[i])
 			{
-				equal_num++;
+				diff.push(i);
+				int get = i;
+				for (int j = i + 1; j < s1.length(); j++) {
+					if (s1[j] == s2[i]) {
+						get = j;
+						if (s1[i] == s2[j]) {
+							not_equal_num++;
+							get = i;
+							int temp = s1[i];
+							s1[i] = s1[j];
+							s1[j] = temp;
+							break;
+						}
+					}
+				}
 			}
+			//abcdefabcdefabcdef
+			//bcdefbcdefabcdefaa
 			else
 			{
 				not_equal_num++;
@@ -45,9 +64,15 @@ public:
 					int temp = s1[first];
 					s1[first] = s1[second];
 					s1[second] = temp;
-					if(s1[second])
+					if (s1[second]) {
+
+					}
 				}
 			}
 		}
     }
 };
+//int main() {
+//	int a = 'a';
+//	cout << a << "\t" << 0xff;
+//}
