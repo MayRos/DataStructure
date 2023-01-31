@@ -79,8 +79,8 @@ public:
         return res;
     }
 };
-int main() {
-    Solution s;
-    string str = "IIIDIDDD";
-    cout<<s.smallestNumber(str);
-}
+//int main() {
+//    Solution s;
+//    string str = "IIIDIDDD";
+//    cout<<s.smallestNumber(str);
+//}
